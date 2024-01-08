@@ -35,11 +35,16 @@ class CalculatorTest {
 
 
     @Test
-    public void testDivideByZero(){
+    public void testDivideByZero() {
         assertThrows(IllegalArgumentException.class, () -> {
-            calculadora.divide(0,0);
+            calculadora.divide(0, 0);
             calculadora.divide(10, 0);
         });
+
     }
 
+
 }
+
+
+
